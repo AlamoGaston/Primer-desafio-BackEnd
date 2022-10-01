@@ -26,6 +26,12 @@ class Usuario {
   }
 }
 
+const nombre = "Gaston";
+
+const apellido = "Alamo";
+
+const mascotas = ["caballo", "gato"];
+
 const libros = [
   {
     nombre: "Berserk",
@@ -37,10 +43,7 @@ const libros = [
   },
 ];
 
-const nombre = "Gaston";
-const apellido = "Alamo";
-
-const newUsuario = new Usuario(nombre, apellido, libros, ["caballo", "gato"]);
+const newUsuario = new Usuario(nombre, apellido, libros, mascotas);
 
 console.log(newUsuario.getFullName());
 console.log(newUsuario.getBooks());
